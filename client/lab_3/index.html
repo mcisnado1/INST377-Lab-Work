@@ -1,5 +1,51 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mercedes Lab3</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="wrapper">
+       <!-- wrapper-->
+      <header class="header"><h1> Mercedes Labs For INST377</h1></header>
+      <div class="container">
+       <!--container-->
+        <div class="left_section box">
+            <!-- left inputs --> 
+           <h2>Album Names</h2>
+           <ol class="box">
+             <li>Un Verano Sin Ti - Bad Bunny</li>
+             <li>As It Was - Harry Styles</li>
+             <li>Provenza -  Karol G</li>
+             <li>Dreamland - Glass Animals</li>
+             <li>SG - DJ Snake</li>
+           </ol>
+        </div>
+        <div class="right_section box"> <!-- right side -->
+           <h2>Image Carousel</h2>  
+           <div class="carousel">
+              <button class="prev">prev</button>
+              <div class="slides"> <!-- images box -->
+                <div class="carousel_item visible"><img id="slide1" src='images/elsalvador2.jpg' alt='Lake in El Salvador' /></div>
+                <div class="carousel_item hidden"><img id="slide2" src='images/elsalvador1.jpg' alt='City in El Salvador'/></div>
+                <div class="carousel_item hidden"><img id="slide3" src='images/elsalvador3.jpg' alt='Volcano in El Salvador'/></div>
+                <div class="carousel_item hidden"><img id="slide4" src='images/elsavador4.png' alt='Capital of El Salvador'/></div>
+               </div>
+               <button class="next">next</button>
+           </div>
+           <div class="box">
+            <!-- description box-->
+            The images above are landscapes at El Salvador
+           </div>
+       </div>
+       </div>
+     </div>
+     <footer class="footer">
+        UMD INST377 Github:<a href="https://github.com/mcisnado1/INST377-Lab-Work" class="footer a">mcisnado1</a>
+     </footer>
+    </div>
+    <script src="script.js"></script>
+ </body>
+</html>
