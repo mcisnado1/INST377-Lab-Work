@@ -42,7 +42,7 @@ function moveToNextSlide() {
     and if so, sets your slidePosition to the first index of an array
     if not, set the slidePosition to the current position plus one
   */
-    if(slidePosition === totalSlides- 1){
+    if(slidePosition === totalSlides - 1){
       slidePosition = 0;
    } else {
      slidePosition += 1;
@@ -57,10 +57,10 @@ function moveToPrevSlide() {
     and if so, sets your slidePosition to the last slide position in totalSlides
     if not, set the slidePosition to the current position minus one
   */
-  if(slidePosition === totalSlides - 1){
-     slidePosition = 0;
+  if(slidePosition === 0){
+    slidePosition = totalSlides - 1;
   } else {
-    slidePosition += 1;
+    slidePosition--; 
   }
 
   updateSlidePosition();
