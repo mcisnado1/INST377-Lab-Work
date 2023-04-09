@@ -2,7 +2,7 @@
 
 function getRandomIntInclusive(min, max){
   min = Math.ceil(min);
-  max = math.floor(max);
+  max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)+ min);
 }
 
@@ -33,7 +33,7 @@ function filterList(list, query) {
 function cutRestaurantList(list){
   console.log('fired cut list');
   const range = [...Array(15).keys()];
-  const newArray =  range.map((item) => {
+  return newArray = range.map((item) => {
     const index = getRandomIntInclusive(0, list.length -1);
     return list[index]
   })
@@ -63,7 +63,7 @@ async function mainEvent() { // the async keyword means we can make API requests
     
     loadAnimation.style.display = 'none';
     console.table(currentList); 
-    injectHTML(currentList);
+    /*injectHTML(currentList);*/
   });
 
   filterDataButton.addEventListener('click', (event)=>{
@@ -73,7 +73,9 @@ async function mainEvent() { // the async keyword means we can make API requests
     const formProps = Object.fromEntries(formData);
 
     console.log(formProps);
-    const newList =  filterList(currentList, formProps.resto);
+
+    const newList = filterList(currentList, formProps.resto);
+   
     console.log(newList);
     injectHTML(newList);
   })
